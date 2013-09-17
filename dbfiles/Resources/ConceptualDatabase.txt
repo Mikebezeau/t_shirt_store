@@ -1,0 +1,105 @@
+g:\dbfiles\ConceptualDatabase.txt
+
+Shirt (ShirtID, Price, Description, Title, Colour, TagID, PointRate)
+		PK - ShirtID
+		FK - TagID references Tag (TagID)
+		AK - Description
+		AK - Title	
+		
+ShirtSize (ShirtID, SizeID)
+		PK - ShirtID, SizeID
+		FK - ShirtID references Shirt (ShirtID)
+		FK - SizeID referecenes Size (SizeID)
+
+Size (SizeID, Size)
+		PK - SizeID
+		
+Image (ImageID, Image, TypeID, ShirtID)
+		PK - ImageID
+		FK - ShirtID references Shirt (ShirtID)
+		FK - TypeID references Type (TypeID)
+		
+Type (TypeID, Type)
+		PK - TypeID
+		
+ShirtType (ShirtID, TypeID)
+		PK - ShirtID, TypeID
+		FK - ShirtID references Shirt (ShirtID)
+		FK - TypeID references Type (TypeID)
+		
+Tag (TagID, Tag)
+		PK - TagID
+		
+CartItem (CartID, ShirtID, SizeID, TypeID, Quantity)
+		PK - CartID, ShirtID
+		FK - ShirtID references Shirt (ShirtID)
+		FK - SizeID references Size (SizeID)
+		FK - TypeID references Type (TypeID)
+		
+Cart (CartID, UserID, SID, OpenDate, CompletedDate)
+		PK - CartID
+		FK - UserID references ?
+		
+PaymentInfo (CartID, BillAddressID, ShipAddressID, PaymentTypeID, ConfirmationNumber, ShippingID, CouponCode)
+		PK - CartID
+		FK - BillAddressID references CustomerAddress (CustomerAddressID)
+		FK - ShipAddressID references CustomerAddress	(CustomerAddressID)
+		FK - ShippingID references Shipping (ShippingID)
+		FK - PaymentTypeID references PaymentType (PaymentID)
+		
+Shipping (ShippingID, Method, UnitCost)
+		PK - ShippingID
+		
+PaymentType (PaymentTypeID, Type)
+		PK - PaymentTypeID
+		
+Customer (CustomerID, Email, LastName, FirstName, AddressID)
+		PK - CustomerID
+		FK - AddressID references Address (AddressID)
+		
+Address (AddressID, PhoneNumber, StreetAddress, City, ProvinceCode, Country, PostalCode)
+		PK - AddressID
+		FK - ProvinceCode references Province (ProvinceCode)
+		
+CustomerAddress (CustomerAddressID, AddressID, CustomerID)
+		PK - CustomerAddressID
+		FK - AddressID references Address (AddressID)
+		FK - CustomerID references Customer (CustomerID)
+		AK - AddressID, CustomerID
+		
+Province (ProvinceCode, ProvinceName)
+		PK - ProvinceCode
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

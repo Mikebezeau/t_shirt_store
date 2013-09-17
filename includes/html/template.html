@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- Header Block
+	Website:  		 
+	Developer:      
+	Languages Used: XHTML 1.0, 
+	Date Created:   
+	Last Revised:   
+
+	Website Description:
+		
+	
+	External files:
+		
+-->
+	
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<!-- This is where information about the page goes -->
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	
+	<!-- Favicon links
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	-->
+
+	<!-- CSS link -->
+	<link href="./css/main.css" rel="stylesheet" type="text/css" />
+	PHP_CSSLINK	
+    	
+    <!-- JavaScript link -->
+	<script src="./js/jquery.js" type="text/javascript"></script>
+    <script src="./js/utilities.js" type="text/javascript"></script>
+    <script src="./js/main.js" type="text/javascript"></script>
+	PHP_JSLINK	
+	
+	<title>PHP_TITLE</title>
+</head>
+	
+<body>
+		<div id="page_wrap">
+
+		
+		<div id="header">
+		
+			<div id="logo">
+				<h1><a href="./index.php"><img src="./images/header.png" width="825" height="147" alt="Swicked Tees" /></a></h1>
+			</div> <!-- logo -->
+			
+            <img id="shirt_logo" src="./images/shirt.png" width="277" height="300" alt="" />
+            
+			<div id="small_cart">
+			
+				<div id="login">
+					<a href="#">Register</a> or <a href="#">Log-in</a>
+				</div><!-- login -->
+				<div id="cart_summary">
+					<img src="./images/cart2.png" alt="" height="30" width="30" />
+					<span id="count">PHP_CART_COUNT</span>
+					<a href="#">checkout</a>
+				</div><!-- cart_summary -->
+			
+			</div> <!-- small_cart -->
+
+			<div id="navbar">
+				<ul>
+					<li><a href="#">about</a></li>
+					<li><a href="#">faq</a></li>
+					<li><a href="#">contact</a></li>
+					<li><a href="#">returns</a></li>
+				</ul>
+			</div> <!-- navbar -->
+		
+		</div> <!-- header -->
+	
+		<div id="container">
+				
+			<div id="sidebar">
+			
+				<div id="products_menu">
+					<h3>Products</h3>
+					<ul>
+						<li><a href="#">All T-Shirts</a></li>
+						<li><a href="#">New</a></li>
+						<li><a href="#">Grab Bag</a></li>
+						<li><a href="#">$10 Tees</a></li>
+					</ul>	
+				</div><!-- products_menu -->
+			
+				<div id="search">
+					<h3>Search</h3>
+					<div>
+						<label for="in_stock"><input type="radio" id="in_stock" name="search_stock" value="IN_STOCK" checked="checked">In stock</label>
+						<label for="all"><input type="radio" id="all" name="search_stock" value="ALL">All</label></div>
+					<form id="search_form" action="#" method="post">
+						<p id="search_style" onclick="flipArrow('search_style');showElem('style_options');">Style</p>
+						<div id="style_options" class="hide">
+							<ul><li id="style_male">Male</li><li id="style_female">Female</li>
+								<li id="style_hoodie">Hoodie</li><li id="style_kids">Kids</li></ul>
+						</div>
+						<!--
+						<div id="style_hidden" class="hide">
+							<input type="checkbox" id="chk_style_male" name="style_male" value="MALE"></input>
+							<input type="checkbox" id="chk_style_female" name="style_female" value="FEMALE"></input>
+							<input type="checkbox" id="chk_style_hoodie" name="style_hoodie" value="HOODIE"></input>
+							<input type="checkbox" id="chk_style_kids" name="style_kids" value="KIDS"></input>
+						</div>
+						-->
+						
+						<p id="search_color" onclick="flipArrow('search_color');showElem('color_options');">Color</p>
+						<div id="color_options" class="hide">
+							<ul><li id="color_white">White</li><li id="color_black">Black</li><li id="color_grey">Grey</li><li id="color_brown">Brown</li>
+								<li id="color_red">Red</li><li id="color_yellow">Yellow</li><li id="color_blue">Blue</li><li id="color_green">Green</li>
+								<li id="color_cream">Cream</li>
+							</ul>
+						</div>
+						
+						<p id="search_size" onclick="flipArrow('search_size');showElem('size_options');">Size</p>
+						<div id="size_options" class="hide">
+							<ul><li id="size_xsmall">X Small</li><li id="size_small">Small</li><li id="size_medium">Medium</li>
+								<li id="size_large">Large</li><li id="size_xlarge">X Large</li><li id="size_2xlarge">2X Large</li>
+								<li id="size_3xlarge">3X Large</li>
+							</ul>
+						</div>
+						
+						<p id="search_catagory" onclick="flipArrow('search_catagory');showElem('catagory_options');">Catagory</p>
+						<div id="catagory_options" class="hide">
+							<ul><li id="catagory_best Sellers">Best Sellers</li><li id="catagory_television">Television</li>
+								<li id="catagory_movies">Movies</li><li id="catagory_games">Games</li>
+								<li id="catagory_internet">Internet</li><li id="catagory_nerd">Nerd</li>
+								<li id="catagory_pop Culture">Pop Culture</li><li id="catagory_sports">Sports</li>
+								<li id="catagory_music">Music</li><li id="catagory_old_school">Old School</li>
+								<li id="catagory_politics">Politics</li><li id="catagory_geography">Geography</li>
+								<li id="catagory_cute">Cute as F*ck</li>
+							</ul>
+						</div>
+ 
+						<div class="input_box">
+							<input id="search_text" type="text" name="search" value="Search Swicked Tees" />
+							<input type="image" value="GO" src="./images/icon_search.png" width="22" height="19"/>
+						</div>
+					</form>
+				</div><!-- search -->
+				
+				<div id="newsletter">
+					<h3>Join Our Newsletter</h3>
+					<p>Because you should</p>
+					<form id="signup_form" action="signup.php" method="post">
+						<div class="input_box">
+							<input id="email_text" type="text" name="email" value="Email Address" />
+							<input type="image" value="SIGN UP" src="./images/btn_sign_up.png" width="55" height="19"/>
+						</div>
+					</form>
+                    <p id="sign_up_message">PHP_MESSAGE</p>
+				</div><!-- newsletter -->
+
+			</div> <!-- sidebar -->
+			
+			<div id="main">
+				PHP_MAIN
+			</div> <!-- main -->
+			
+			<div id="footer">
+				<div id="footer_social">
+					<ul>
+						<h3>Stalk Us!</h3>
+						<li>
+							<img src="./images/fb.png" width="64" height="64" />
+						</li>
+						<li>
+							<img src="./images/rss.png" width="64" height="64" />
+						</li>
+						<li>
+							<img src="./images/g.png" width="64" height="64" />
+						</li>
+						<li>
+							<img src="./images/twit.png" width="64" height="64" />
+						</li>
+					</ul>
+				</div> <!-- footer_social -->
+				
+				<div id="footer_faq">
+					<ul>
+						<h3>Frequently Asked Questions</h3>
+						<li>
+							<a href="#">What's the sizing/quality of the shirts?</a>
+						</li>
+						<li>
+							<a href="#">How can I pay for my order?</a>
+						</li>
+						<li>
+							<a href="#">What's the return & exchange policy?</a>
+						</li>
+						<li>
+							<a href="#"><h4>>> More FAQ</h4></a>
+						</li>
+					</ul>
+				</div> <!-- footer_faq -->
+				
+				<div id="footer_shipping">
+					<h3>Domestic and International Shipping</h3>
+					<img src="./images/icon_globe.png" width="108" height="87" />
+					<p>We ship all around the world!</p>
+					<p><a href="#">Click here to see if we ship to your country.</a></p>
+				</div>
+				<p id="copywrite">Vandelay Industries ©2011</p>
+			</div> <!-- footer -->
+			
+		</div> <!-- container -->
+	</div> <!-- page_wrap -->
+</body>
+</html>

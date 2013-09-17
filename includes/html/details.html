@@ -1,0 +1,33 @@
+<div id="image">
+    <img src="./images/PHP_DEFAULTIMAGE" alt="" width="400" height="400"/>
+</div>
+<div id="shirt_info">
+    <h3>PHP_TITLE</h3>
+    <p>
+        PHP_DESCRIPTION
+    </p>
+    <form id="details" action="addcart.php" method="post">
+        <h4>1. Choose Type</h4>
+        PHP_TYPELIST
+        <h4>2. Choose Size</h4>
+        PHP_SIZELIST
+        <p>Our shirts tend to be awesome. Please be seated when opening package.</p>
+        <p id="selection">
+            <span id="selected_type">Female</span>, Creme, 
+            <span id="selected_size">XS</span>
+        </p>
+        <div id="add_to_cart">
+            <p id="price">PHP_PRICE</p>
+            <input type="hidden" name="id" value="PHP_SHIRTID" />
+            <input type="hidden" name="type" value="Female" />
+            <input type="hidden" name="size" value="XS" />
+            <input type="submit" value="Add to Cart" />
+			<p>PHP_ADDMESSAGE</p>
+        </div>
+    </form> <!-- details -->
+</div> <!-- shirt_info -->
+<p id="tag" class="clrflt">See more from <a href="#">Internet</a></p>
+<div id="recommended" class="clrflt">
+    <h3>Recommended Just For You</h3>
+</div> <!-- recommended -->
+PHP_RECOMMENDATION

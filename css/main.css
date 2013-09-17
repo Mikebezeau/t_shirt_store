@@ -1,0 +1,357 @@
+@charset "UTF-8";
+
+/*
+	Author:
+	Created On:
+	Revised On:
+	CSS Version: 2.1
+	
+	Purpose:
+	
+	Related Files:
+*/
+
+/* Clear default styling from block level elements */
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration:none;
+	color:#000;
+}
+a:hover{
+	text-decoration:underline;
+}
+h3{
+	font-family:Verdana,Geneva,'DejaVu Sans',sans-serif;
+	margin:3px 0;
+}
+html{
+}
+body{
+	background-color:#FFF;
+	/*background-image:url("../images/retro_background2.gif");*/
+	background-image:url("../images/webpage_background.jpg");
+	background-position:top center;
+}
+#page_wrap{
+	padding-bottom:40px;
+	font-size:12px;
+	font-family:'Trebuchet MS',sans-serif;
+}
+#container{
+	position:relative;
+	width:950px;
+	margin:0 auto;
+	padding-top:15px;
+	border-radius:15px;
+	background-color:#FFF;
+}
+/* HEADER ************************************************/
+#header{
+	position:relative;
+	width:950px;
+	margin:0 auto;
+	height:210px;
+	background-color:transparent;
+}
+#header #logo h1{
+	font-size:60.5px;
+	font-family:Constantina,Georgia,'Nimbus Roman No9 L',serif;
+	padding-top:25px;
+	padding-left:70px;
+}
+#header #shirt_logo{
+	position:absolute;
+	z-index:-100;
+	top:-40px;
+	left:-50px;
+}
+/* SMALL CART ************************************************/
+#small_cart{
+	position:absolute;
+	top:170px;
+	left:630px;
+	width:260px;
+	padding:20px;
+	border-radius:15px;
+	background-color:#59badf;
+	font-size:14px;
+	color:#FFF;
+}
+#small_cart a{
+	color:#FFF;
+}
+#login{
+	position:relative;
+	top:-10px;
+	width:120px;
+	float:left;
+	border-right:2px dotted #FFF;
+}
+#cart_summary{
+	position:relative;
+	top:-26px;
+	float:right;
+}
+#cart_summary img{
+	position:relative;
+	top:11px;
+}
+#cart_summary #count{
+	position:relative;
+	top:6px;
+	font-size:30px;
+}
+/* NAVBAR ************************************************/
+#navbar{
+	position:absolute;
+	top:175px;
+	left:80px;
+	font-size:22px;
+	font-weight:bolder;
+	height:40px;
+}
+#navbar ul{
+	width:500px;
+	margin:0 auto;
+	list-style-type:none;
+}
+#navbar li{
+	float:left;
+	text-align:center;
+}
+#navbar a{
+	color:#59badf;
+	display:block;
+	width:125px;
+	border-radius:15px;
+}
+#navbar a:hover, #navbar a:active, #navbar a:focus{
+	background-color:#FFF;
+	text-decoration:none;
+}
+/* SIDEBAR ************************************************/
+#sidebar{
+	width:180px;
+	float:left;
+	background-color:#FFF;
+	padding:0 10px;
+}
+#sidebar > div{
+	margin-bottom:40px;
+}
+#sidebar h3{
+	width:180px;
+	border-bottom:1px solid #000;
+}
+/* products *******************/
+#products_menu{
+	/*text-align:center;*/
+}
+#products_menu ul{
+	list-style-type:none;
+}
+#products_menu a{
+	display:block;
+	width:170px;
+	height:20px;
+	background-color:#FFF;
+	padding:2px 5px 0 5px;
+}
+#products_menu a:hover{
+	background-color:#DDD;
+	text-decoration:none;
+}
+/* search *******************/
+#search{
+	
+}
+#search label{
+	margin-right:10px;
+}
+#search label input[type=radio]{
+	margin-right:5px;
+}
+#search p{
+	cursor: pointer;
+	overflow:hidden;
+	clear:both;
+	background-image:url("../images/icon_arrows.png");
+	background-repeat:no-repeat;
+	background-position:150px 0;
+}
+#search #style_options{
+
+}
+#search ul{
+	list-style:none;
+}
+#search li{
+	display:block;
+	width:80px;
+	float:left;
+	background-color:#FFF;
+	text-align:center;
+	margin:3px;
+	cursor: pointer;
+	border:1px solid grey;
+}
+#search p{
+	height:20px;
+	padding:2px 5px 0 5px;
+}
+#search p:hover{
+	background-color:#DDD;
+}
+#search li:last-child {
+	margin-bottom:8px;
+}
+#color_options{	
+	color:#FFF;
+}
+#color_options #color_white{
+	background-color:White;
+	color:#000;
+}
+#color_options #color_black{
+	background-color:Black;
+}
+#color_options #color_grey{
+	background-color:#81878A;
+}
+#color_options #color_brown{
+	background-color:#42332C;
+}
+#color_options #color_red{
+	background-color:#C62B2A;
+}
+#color_options #color_yellow{
+	background-color:#FFAD00;
+}
+#color_options #color_blue{
+	background-color:#36548B;
+}
+#color_options #color_green{
+	background-color:#62A25A;
+}
+#color_options #color_cream{
+	background-color:#FFF0CC;
+	color:#000;
+}
+/* newsletter *******************/
+#newsletter #sign_up_message{
+	text-align:center;
+	color:red;
+	font-size:120%;
+}
+/* input fields *******************/
+#sidebar .input_box{
+	border-radius:3px;
+	border:1px solid grey;
+	background-color:#FFF;
+	padding:2px;
+	margin-top:5px;
+	height:23px;
+	clear:both;
+}
+.input_box input[type=image]{
+	display:block-inline;
+	margin-top:2px;
+	height:19px;
+}
+.input_box input[type=text]{
+	display:block-inline;
+	position:relative;
+	top:-5px;
+	margin-left:3px;
+	height:19px;
+	border:none;
+	background-color:#EEE;
+	color:#666;
+}
+.input_box #search_text{
+	width:144px;
+}
+.input_box #email_text{
+	width:111px;
+}
+/* MAIN ************************************************/
+#main{
+	width:750px;
+	float:right;
+	background-color:#FFF;
+	font-size:16px;
+}
+#main #addvert{
+	display:block;
+	margin:0 auto;
+	padding:3px 0;
+	border-top:5px solid grey;
+	border-bottom:5px solid grey;
+	margin-bottom:10px;
+}
+#main ul{
+	list-style-type:none;
+	margin:3px;
+}
+#main li{
+	text-align:center;
+	float:left;
+	margin:0 3px;
+}
+/* FOOTER ************************************************/
+#footer{
+	padding-top:10px;
+	border-top:1px solid grey;
+	width:950px;
+	clear:both;
+	border-radius:15px;
+	background-color:#FFF;
+}
+#footer h3{
+	margin-bottom:10px;
+}
+#footer a{
+	color:#555;
+	font-weight:bold;
+}
+#footer div{
+	width:296px;
+	float:left;
+	margin:10px;
+}
+#footer ul{
+	list-style-type:none;
+}
+#footer_social{
+}
+
+#footer_social li{
+	float:left;
+	margin-left:5px;
+}
+#footer_faq li{
+	margin-bottom:5px;
+}
+#footer_shipping{
+
+}
+#footer_shipping img{
+	margin:10px 10px 0 -20px;
+	float:left;
+}
+#footer #copywrite{
+	padding-bottom:5px;
+	clear:both;
+	text-align:center;
+	color:#999;
+}
+
+.hide{
+	display:none;
+}
+.clrflt{
+	clear:both;
+}

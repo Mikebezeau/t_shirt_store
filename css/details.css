@@ -1,0 +1,144 @@
+/* css/details.css */
+
+#image {
+	float: left;
+	margin: 0 10px;
+	padding: 10px;
+	border: 1px solid #858585;
+}
+
+#shirt_info {
+	width: 300px;
+	margin-left: 438px;
+	padding-left: 10px;
+	background-color: #F6F6F6;
+}
+
+	#shirt_info h3 {
+		margin-bottom: 10px;
+	}
+
+	#shirt_info h3+p {
+		
+		font-size: 80%;
+	}
+	
+	#details {
+		height: 292px;
+		margin: 10px 0;
+		padding-top: 10px;
+	}
+	
+	#details input[type=submit], #details input[type=submit] +p {
+		position:relative;
+		top:-7px;
+	}
+	
+	#details input[type=submit] +p {
+		display:inline-block;
+		left:5px;
+		color:red;
+		font-size:110%;
+	}
+	
+		#details h4 {
+			margin: 5px 0;
+		}
+		
+		#details ul {
+			height: 31px;
+			margin-left: 20px;
+			list-style: none;
+			font-size: 90%;
+		}
+			
+			#details ul li {
+				float: left;
+			}
+		
+				#details ul li a, #details ul li a:visited {
+					display: block;
+					margin: 0 2px;
+					padding: 6px;
+					border: 1px solid #0682DB;
+					border-radius: 7px;
+					-moz-border-radius: 7px;
+					-webkit-border-radius: 7px;
+					background-color: #0682DB;
+					color: white;
+					text-decoration: none;
+					behavior: url(PIE.htc);
+				}
+
+				#details .size {
+					width:26px;
+					padding:6px 0;
+					text-align:center;
+				}
+								
+				#details ul li a:hover, #details ul li a:focus {
+					border: 1px solid #D3D3D3;
+					background-color: #D3D3D3;
+					color: black;
+				}
+		
+				#details #current_type {
+					background-color: #F9CD04;
+					border: 1px solid #F9CD04;
+					color: black;
+				}
+				
+				#details #current_size {
+					background-color: #F9CD04;
+					border: 1px solid #F9CD04;
+					color: black;
+				}
+				
+		#details ul+p {
+			
+			margin-top:15px;
+			margin-right:10px;
+			padding: 5px 0;
+			border-top: 1px solid lightgrey;
+			font-size: 70%;
+		}
+		
+		#selection {
+			margin: 15px 0;
+		}
+		
+		#add_to_cart{
+			height:40px;	
+		}
+		
+		#price {
+			display:inline-block;
+			padding-right: 10px;
+			font-size: 200%;
+			font-weight: bold;
+		}
+		
+		#tag {
+			padding:7px 0;
+			/*background-color: #D5D5D5;*/
+			text-align: center;
+		}
+		
+			#tag a, #tag a:visited {
+				color: #1775E8;
+				font-weight: bold;				
+				text-decoration: none;
+			}
+		
+			#tag a:hover, #tag a:focus {
+				text-decoration: underline;
+			}
+	
+	#recommended {
+		padding: 15px 0;
+		margin-left: 10px;
+	}
+	
+		#recommended h3 {
+			margin-bottom: 10px;
+		}

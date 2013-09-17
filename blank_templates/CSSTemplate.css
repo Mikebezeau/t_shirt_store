@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/*
+	Author:
+	Created On:
+	Revised On:
+	CSS Version: 2.1
+	
+	Purpose:
+	
+	Related Files:
+*/
+
+/* Clear default styling from block level elements */
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, blockquote {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}

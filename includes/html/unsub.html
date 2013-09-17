@@ -1,0 +1,27 @@
+<!-- /includes/html/unsub.html -->
+
+<form action="unsub.php" method="post">
+<div id="message">
+	<h2>Ooops, you already receive our fantastic newsletter!</h2>
+    <p><span class="big_bold">PHP_EMAIL</span></p>
+	<p>
+		Were you looking to unsubscribe? (Please don't go)
+	</p>
+	<fieldset>
+		<p>
+			<input type="radio" name="choice" id="stay" value="stay" checked="checked" />
+			<label for="stay">I want to stay</label>
+		</p>
+		<p>
+			<input type="radio" name="choice" id="go" value="go" />
+			<label for="go">I have to go</label>
+		</p>
+		<p>
+        	<!-- carry forward users email address for use in DELETE query -->
+	        <input type="hidden" value="PHP_EMAIL" name="email" />
+			<input type="submit" value="Choose" />
+		</p>
+	</fieldset>
+	<p>Honey badger don't care if you unsubscribe</p>
+</div>
+</form>
